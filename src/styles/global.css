@@ -3,6 +3,7 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+@import "tailwindcss";
 
 :root {
 	--accent: #2337ff;
@@ -33,7 +34,7 @@ main {
 	width: 1000px;
 	max-width: calc(100% - 2em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 2em 1em;
 }
 h1,
 h2,
@@ -112,6 +113,9 @@ blockquote {
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
+}
+p{
+	margin: 0.5rem 0 0.5rem 0;
 }
 @media (max-width: 720px) {
 	body {

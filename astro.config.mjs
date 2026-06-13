@@ -2,11 +2,14 @@ import { defineConfig, fontProviders } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
+import tailwindcss from '@tailwindcss/vite';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://zenghy1998.github.io',
   base: '/',
   integrations: [mdx(), sitemap()],
+
   fonts: [
     {
       provider: fontProviders.local(),
@@ -31,4 +34,8 @@ export default defineConfig({
       },
     },
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
