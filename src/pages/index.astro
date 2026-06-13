@@ -7,6 +7,9 @@ import { Image } from 'astro:assets';
 
 
 import ZengHY from '../assets/ZengHY.jpg';
+import Alipay from '../assets/Alipay.png';
+import Wepay from '../assets/Wepay.png';
+
 ---
 
 <!doctype html>
@@ -38,7 +41,21 @@ import ZengHY from '../assets/ZengHY.jpg';
 					<p class="p-2 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-sm transition-shadow text-2xl"><strong>副业内容:</strong><span class="text-slate-500"> IPD(Intelligent Power Device)高边回路开发:Charge-Pump、Gate Driver、IDLE Controller、V-ground</span></p>					
 				</div>
 			</div>
-
+			<div class="">
+				<h3 class="p-2 rounded-xl border border-slate-100 hover:shadow-sm transition-shadow font-bold">喵喵Giao捐款链接</h3>
+				<p class="text-slate-700">为了本教的可持续发展，本喵喵Giao教主希望各位能人贤士凡入教者上缴一个猫罐头的钱。</p>
+				<p class="text-slate-300">求你们了，就一个猫罐头的钱，就一个猫罐头的钱啊....</p>
+				<div class="grid md:grid-cols-2">
+					<div alt="支付宝" class="flex flex-col items-center p-4 rounded-2xl">
+						<p class="text-xl font-bold text-slate-700 mb-3">支付宝</p>
+						<Image src={Alipay} alt="支付宝收款码" width={350} height={350} class="center"/>
+					</div>
+					<div alt="微信" class="flex flex-col items-center p-4 rounded-2xl">
+						<p class="text-xl font-bold text-slate-700 mb-3">微信收款码</p>
+						<Image src={Wepay} alt="微信收款码" width={350} height={370} class="center"/>
+					</div>
+				</div>
+			</div>
 		</main>
 		<Footer/>
 	</body>
