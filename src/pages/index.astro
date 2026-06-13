@@ -25,7 +25,7 @@ import ZengHY from '../assets/ZengHY.jpg';
 		<Header />
 		<main>
 			<div class="Base_Information grid">
-				<Image src={ZengHY} alt="我的个人头像" width={240} height={400} class="photo_colum p-4 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-sm transition-shadow" />
+				<Image src={ZengHY} alt="我的个人头像" width={240} height={400} class="flex grid-cols-1 justify-center p-4 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-sm transition-shadow" />
 				<div class="word_colum">
 					<p class="p-2 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-sm transition-shadow text-2xl"><strong>Name:</strong><span class="text-slate-500">曾的很难喵</span></p>
 					<p class="p-2 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-sm transition-shadow text-2xl"><strong>Age:</strong><span class="text-slate-500">7 Month</span></p>
@@ -35,6 +35,7 @@ import ZengHY from '../assets/ZengHY.jpg';
 					<p class="p-2 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-sm transition-shadow text-2xl"><strong>Work Content:</strong><span class="text-slate-500">模拟IC开发工程师</span></p>					
 				</div>
 			</div>
+
 		</main>
 		<Footer/>
 	</body>
@@ -46,11 +47,5 @@ import ZengHY from '../assets/ZengHY.jpg';
 		/*文字列*/
 		.word_colum{
 		}
-		.photo_colum{
-			grid-column: 1;
-			display: flex;
-			justify-content: center;
-		}
-
 	</style>
 </html>
